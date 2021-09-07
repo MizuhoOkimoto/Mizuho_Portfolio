@@ -17,7 +17,7 @@
     <!-- FOR custom css file / has to be ./ and folder name -->
     <link rel="stylesheet" type="text/css" href="./src/css/stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="./src/css/function.css" />
-    <link rel="stylesheet" type="text/css" href="./src/css/works.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/projects.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -40,10 +40,10 @@
         </div>
         <div class="menu_box">
           <ul class="menu">
-            <li>ABOUT ME</li>
-            <li>WORKS</li>
-            <li>SKILLS</li>
-            <li>CONTACT ME</li>
+            <li><a href="#about_me_jump">ABOUT ME</a></li>
+            <li><a href="#skills_jump">SKILLS</a></li>
+            <li><a href="#projects_jump">PROJECTS</a></li>
+            <li><a href="#contact_jump">CONTACT ME</a></li>
           </ul>
         </div>
       </div>
@@ -82,7 +82,7 @@
       <!-- end container -->
 
       <!-- <div class="container-fluid"> -->
-      <div class="skills">
+      <div class="skills" id="skills_jump">
         <h2>SKILLS</h2>
         <hr />
         <div class="programming">
@@ -136,12 +136,14 @@
       <!-- end skills -->
       <!-- </div> -->
 
-      <div class="works" id="works_jump">
-        <h2>Works</h2>
+      <div class="projects" id="projects_jump">
+        <h2>PROJECTS</h2>
         <ul class="slider">
           <li>
             <div class="each_work">
-              <img src="./src/public/img/Nodejs_project.JPG" alt="my_project" />
+              <a href="https://airbnb-clone165.herokuapp.com" target="blank">
+                <img src="./src/public/img/Nodejs_project.JPG" alt="my_project"
+              /></a>
               <div class="desc">
                 <h5>Accommodation Booking site</h5>
                 <p>
@@ -149,32 +151,92 @@
                   Handlebars template engine. I created both administrator pages and user pages and
                   stored information on MongoDB.
                 </p>
+                <div>
+                  Links:
+                  <a
+                    href="https://github.com/MizuhoOkimoto/Accomodation-booking-site"
+                    target="blank"
+                    type="button"
+                    class="btn btn-primary"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://airbnb-clone165.herokuapp.com"
+                    target="blank"
+                    type="button"
+                    class="btn btn-info"
+                  >
+                    Website
+                  </a>
+                </div>
               </div>
             </div>
           </li>
           <!-- React - Restaurant API -->
           <li>
             <div class="each_work">
-              <img src="./src/public/img/React_project.JPG" alt="react project" />
+              <a href="https://react-restaurant-api.vercel.app/Restaurants" target="blank">
+                <img src="./src/public/img/React_project.JPG" alt="react project" />
+              </a>
               <div class="desc">
                 <h5>React - Restaurant API</h5>
                 <p>
                   I created a React application. This website connects with MongoDB database and
                   uses Leaflet to get map.
                 </p>
+                <div>
+                  Links:
+                  <a
+                    href="https://github.com/MizuhoOkimoto/React-Restaurant-API"
+                    target="blank"
+                    type="button"
+                    class="btn btn-primary"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://react-restaurant-api.vercel.app/Restaurants"
+                    target="blank"
+                    type="button"
+                    class="btn btn-info"
+                  >
+                    Website
+                  </a>
+                </div>
               </div>
             </div>
           </li>
           <!-- Angular-Music Discography -->
           <li>
             <div class="each_work">
-              <img src="./src/public/img/Angular_project.JPG" alt="angular project" />
+              <a href="https://discover-new-music.vercel.app/" target="blank">
+                <img src="./src/public/img/Angular_project.JPG" alt="angular project" />
+              </a>
               <div class="desc">
                 <h5>Angular - Music Discography</h5>
                 <p>
                   I created a React application. This website connects with MongoDB database and
-                  uses Leaflet to get map.
+                  uses Leaflet to get map. This website requires user name and password. You can
+                  create one or use the registered info. <br />
+                  User Name:visitor / Password:1111
                 </p>
+                <div>
+                  Links:
+                  <a
+                    href="https://github.com/MizuhoOkimoto/Discover-new-music"
+                    target="blank"
+                    type="button"
+                    class="btn btn-primary"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://discover-new-music.vercel.app/"
+                    target="blank"
+                    type="button"
+                    class="btn btn-info"
+                  >
+                    Website
+                  </a>
+                </div>
               </div>
             </div>
           </li>
@@ -183,52 +245,53 @@
           <!--/slider-->
         </ul>
       </div>
-      <!-- end works -->
+      <!-- end projects -->
 
       <div class="contact" id="contact_jump">
-        <h2>Contact Me</h2>
+        <h2>CONTACT ME</h2>
         <div class="contact_form">
-          <div class="form-group">
-            <label for="contact_name"><span>*</span> Name </label>
-            <input
-              type="text"
-              class="form-control"
-              name="contact_name"
-              id="contact_name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="company_name"> Company name </label>
-            <input type="text" class="form-control" name="company_name" id="contact_name" />
-          </div>
-          <div class="form-group">
-            <label for="contact_email"><span>*</span> Email address</label>
-            <input
-              type="text"
-              class="form-control"
-              name="contact_email"
-              id="contact_email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="message"><span>*</span>Message:</label>
-            <textarea class="form-control" rows="5" id="message"></textarea>
-          </div>
-          <p><span>* </span> Required fields must be filled</p>
-          <input class="contact-submit" type="submit" value="Send" />
+          <form action="https://formsubmit.co/mokimoto@myseneca.ca" method="POST">
+            <div class="form-group">
+              <label for="contact_name"><span>*</span> Name </label>
+              <input
+                type="text"
+                class="form-control"
+                name="contact_name"
+                id="contact_name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="company_name"> Company name </label>
+              <input type="text" class="form-control" name="company_name" id="contact_name" />
+            </div>
+            <div class="form-group">
+              <label for="contact_email"><span>*</span> Email address</label>
+              <input
+                type="text"
+                class="form-control"
+                name="contact_email"
+                id="contact_email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message"><span>*</span>Message:</label>
+              <textarea class="form-control" rows="5" id="message"></textarea>
+            </div>
+            <p><span>* </span> Required fields must be filled</p>
+            <input class="contact-submit" type="submit" value="Send" />
+          </form>
         </div>
       </div>
       <!-- end contact -->
 
       <footer>
         <ul class="footer_elements">
-          <li></li>
-          <li><a href="#top_jump">Top</a></li>
-          <li><a href="#about_me_jump">About Me</a></li>
-          <li><a href="#works_jump">Works</a></li>
-          <li><a href="#contact_jump">Contact Me</a></li>
+          <li><a href="#top_jump">TOP</a></li>
+          <li><a href="#about_me_jump">ABOUT ME</a></li>
+          <li><a href="#projects_jump">PROJECTS</a></li>
+          <li><a href="#contact_jump">CONTACT ME</a></li>
         </ul>
         <ul class="snsButtons">
           <li class="snsButtons_twitter">
@@ -241,7 +304,7 @@
             <i class="fa fa-instagram"></i><span class="snsButtons_label"></span>
           </li>
         </ul>
-        <p><span>&copy;</span> 2021 Mizuho Okimoto</p>
+        <p>2021 Mizuho Okimoto</p>
       </footer>
     </div>
     <!-- end container -->

@@ -71,7 +71,7 @@ $("#page-top").click(function () {
   return false; //リンク自体の無効化
 });
 
-//------ WORKS SECTION ------//
+//------ PROJECTS SECTION ------//
 
 $(".slider").slick({
   autoplay: false, //自動的に動き出すか。初期値はfalse。
