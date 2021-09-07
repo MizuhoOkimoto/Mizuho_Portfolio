@@ -18,6 +18,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Trebuchet MS", sans-serif;
+  /* background-color: maroon; */
+  background-color: #ffdac61c;
 }
 /* body {
   font-family: 'Lucida Grande';
@@ -32,10 +34,6 @@ a {
 .container-fluid {
   margin: 0;
   padding: 0;
-  /* width: 100vw; */
-  background-color: #ffdac61c;
-  /* justify-content: center; */
-  height: auto;
 }
 
 /* TOP CONTAINER SECTION */
@@ -46,7 +44,7 @@ a {
   font-family: "Roboto Slab", serif;
   /* text-align: center; */
   width: 100vw;
-
+  margin-top: 50px;
   height: auto;
   opacity: 0.8;
   position: relative;
@@ -78,7 +76,7 @@ a {
   right: 8vw;
   bottom: 5vw;
 }
-.menu {
+.menu_box a {
   color: black;
   font-size: 1.5em;
   line-height: 50px;
@@ -86,6 +84,14 @@ a {
   text-align: center;
   margin-left: 0px;
 }
+/* .menu {
+  color: black;
+  font-size: 1.5em;
+  line-height: 50px;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 0px;
+} */
 ul li:hover {
   /* color: rgb(41, 39, 39); */
   color: #7c6a0a;
@@ -132,10 +138,9 @@ h2 {
   /* width: 25%; */
   /* background-size is important */
   background-size: cover;
-  /* margin-left: 50px; */
+  margin-left: 100px;
   margin-top: 30px;
   display: inline-block;
-  /* float: left; */
 }
 .my_pic img {
   position: relative;
@@ -191,6 +196,7 @@ h2 {
   /* float: left; */
   margin: 50px 40px 50px 50px;
   text-align: center;
+  clear: left;
 
   /* background-color: violet; */
 }
@@ -214,9 +220,10 @@ h2 {
 
 /* SKILLS SECTION */
 .skills {
-  margin: 20px 20px 30px 20px;
+  margin: 60px 20px 80px 20px;
   height: auto;
   justify-content: center;
+  clear: left;
 }
 /* .skills h1 {
   font-size: 4em;
@@ -328,13 +335,14 @@ h2 {
   margin-left: 20px;
 }
 
-/* WORKS SECTION */
-.works {
-  margin: 50px;
+/* PROJECTS SECTION */
+.projects {
+  /* margin: 150px; */
+  padding: 20px;
   height: auto;
   justify-content: center;
 }
-/* .works h1 {
+/* .projects h1 {
   font-size: 4em;
   font-weight: 700;
   margin-bottom: 20px;
@@ -346,18 +354,18 @@ h2 {
 
 /* CONTACT ME SECTION */
 .contact {
-  /* margin: 20px 20px 30px 20px;
-  height: auto; */
+  margin: 70px 20px 50px 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  /* width: 80%; */
   height: auto;
   position: relative;
 }
 .contact_form {
+  padding: 45px;
   width: 70%;
-  margin: auto;
+  margin-left: 15%;
 }
 .contact p {
   margin-bottom: 10px;
