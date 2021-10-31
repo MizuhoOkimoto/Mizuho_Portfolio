@@ -1,0 +1,428 @@
+/*color pallet: https://coolors.co/7c6a0a-babd8d-ffdac6-fa9500-eb6424 */
+/*----------------- START CONTAINER AND OTHER COMMON PART ------------------*/
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+button,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  /* background-color: #ffdac61c; */
+}
+/* body {
+  font-family: 'Lucida Grande';
+} */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*-------------- END CONTAINER AND OTHER COMMON PART ---------------------*/
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+/* TOP CONTAINER SECTION */
+.top-container {
+  /* background-image: url(../public/img/topimage.jpg); */
+  /* padding: 80px 0px 100px 0px; */
+  background-size: cover;
+  font-family: "Roboto Slab", serif;
+  /* text-align: center; */
+  width: 100vw;
+  margin-top: 50px;
+  height: auto;
+  opacity: 0.8;
+  position: relative;
+}
+.top-container img {
+  width: 100vw;
+}
+.my_name h1 {
+  color: #eb6424;
+  font-size: 5.5em;
+  font-weight: 700;
+  /* text-align: left; */
+  /* margin-left: 50px; */
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  position: absolute;
+  left: 5vw;
+  top: 5vw;
+}
+.menu_box {
+  /* background-color: rgba(196, 193, 169, 0.801); */
+  background-color: #babd8d;
+  /* height: 200px; */
+  /* width: 20%; */
+  padding: 30px 40px 30px 40px;
+  opacity: 0.8;
+  /* margin-left: 920px; */
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  position: absolute;
+  right: 8vw;
+  bottom: 5vw;
+}
+.menu_box a {
+  color: black;
+  font-size: 1.5em;
+  line-height: 50px;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 0px;
+}
+/* .menu {
+  color: black;
+  font-size: 1.5em;
+  line-height: 50px;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 0px;
+} */
+ul li:hover {
+  /* color: rgb(41, 39, 39); */
+  color: #7c6a0a;
+}
+
+/* ABOUT ME SECTION */
+.about_me {
+  margin: 20px 50px 50px 20px;
+  height: auto;
+  /* display: block; */
+  /* background-color: tomato; */
+  justify-content: center;
+}
+/* TITLE */
+h2 {
+  font-size: 4em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  margin-top: 50px;
+  /* color: rgb(255, 115, 0); */
+  color: #eb6424;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+
+/* .about_me h1 {
+  font-size: 4em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  margin-top: 50px;
+  color: rgb(255, 115, 0);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+} */
+.about_me-contents {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  /* background-color: turquoise; */
+  margin: 30px 30px;
+  float: left;
+}
+.my_pic {
+  /* width: 25%; */
+  /* background-size is important */
+  background-size: cover;
+  margin-left: 100px;
+  margin-top: 30px;
+  display: inline-block;
+}
+.my_pic img {
+  position: relative;
+  height: 350px;
+  border-radius: 50%;
+  border: 10px solid #eb632475;
+}
+/*
+.my_pic img:after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: rotate(3deg); //回転させる
+  background: #fff;
+  z-index: -5;
+}
+*/
+.explain {
+  /* display: inline-block; */
+  /* float: left; */
+  font-size: 20px;
+  margin-left: 50px;
+  margin-top: 60px;
+  line-height: 30px;
+  /* width: 70%; */
+}
+
+/* @media screen and (min-width: 750px) { */
+/* 750px以上の画面のみ横並びを適用 */
+/*
+  .my_pic,
+  .explain {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .my_pic {
+    display: inline-block;
+  }
+
+  .explain {
+    display: inline-block;
+    width: 300px;
+    margin-left: 20px;
+    vertical-align: top;
+  }
+}
+*/
+.buttons {
+  /* float: left; */
+  margin: 50px 40px 50px 50px;
+  text-align: center;
+  clear: left;
+
+  /* background-color: violet; */
+}
+.buttons a {
+  color: white;
+}
+.buttons button {
+  margin-left: 30px;
+  padding: 10px;
+  background-color: #eb6424;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  box-shadow: 5px 5px 4px;
+}
+.buttons button:hover {
+  color: white;
+  background-color: #fa9500;
+}
+.downloadResume {
+  margin-left: 30px;
+  padding: 10px;
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  box-shadow: 5px 5px 4px;
+}
+
+/* SKILLS SECTION */
+.skills {
+  margin: 60px 20px 80px 20px;
+  height: auto;
+  justify-content: center;
+  clear: left;
+}
+/* .skills h1 {
+  font-size: 4em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 50px;
+  color: rgb(255, 115, 0);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+} */
+.programming {
+  display: flex; /* flex box */
+  justify-content: center; /* 水平方向 */
+  align-items: center; /* 垂直方向 */
+}
+.programming_img {
+  background-image: url(../public/img/programming.png);
+  height: 100px;
+  width: 100px;
+  /* background-size is important */
+  background-size: cover;
+  margin: 20px;
+  float: left;
+}
+.programming_skills {
+  font-size: 20px;
+  line-height: 30px;
+  float: left;
+  margin-left: 60px;
+}
+.database {
+  display: flex; /* flex box */
+  justify-content: center; /* 水平方向 */
+  align-items: center; /* 垂直方向 */
+}
+.database_img {
+  background-image: url(../public/img/database.png);
+  height: 95px;
+  width: 95px;
+  /* background-size is important */
+  background-size: cover;
+  margin: 20px;
+  float: left;
+}
+.database_skills {
+  font-size: 20px;
+  line-height: 30px;
+  float: left;
+  margin-left: 60px;
+}
+.tool {
+  display: flex; /* flex box */
+  justify-content: center; /* 水平方向 */
+  align-items: center; /* 垂直方向 */
+}
+.tool_img {
+  background-image: url(../public/img/intelij.png);
+  height: 95px;
+  width: 95px;
+  /* background-size is important */
+  background-size: cover;
+  margin: 20px;
+  float: left;
+}
+.tool_skills {
+  font-size: 20px;
+  line-height: 30px;
+  float: left;
+  margin-left: 60px;
+}
+.web {
+  display: flex; /* flex box */
+  justify-content: center; /* 水平方向 */
+  align-items: center; /* 垂直方向 */
+}
+.web_img {
+  background-image: url(../public/img/web.png);
+  width: 159px;
+  height: 95px;
+  /* background-size is important */
+  background-size: cover;
+  /* margin: 20px; */
+  float: left;
+}
+.web_skills {
+  font-size: 20px;
+  line-height: 30px;
+  float: left;
+  margin-left: 20px;
+}
+.env {
+  display: flex; /* flex box */
+  justify-content: center; /* 水平方向 */
+  align-items: center; /* 垂直方向 */
+}
+.env_img {
+  background-image: url(../public/img/os.png);
+  width: 170px;
+  height: 69px;
+  /* background-size is important */
+  background-size: cover;
+  /* margin: 10px; */
+  float: left;
+}
+.env_skills {
+  font-size: 20px;
+  line-height: 30px;
+  float: left;
+  margin-left: 20px;
+}
+
+/* CONTACT ME SECTION */
+.contact {
+  margin: 70px 20px 50px 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 80%; */
+  height: auto;
+  position: relative;
+}
+.contact_form {
+  padding: 45px;
+  width: 70%;
+  margin-left: 15%;
+}
+.contact p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.contact span {
+  color: red;
+}
+input,
+textarea {
+  margin-bottom: 30px;
+  border: 1px solid #dee7ec;
+  width: 300px;
+  padding: 6px;
+  font-size: 12px;
+  font-family: "Roboto Slab", serif;
+}
+.contact-submit {
+  background-color: #eb6424;
+  color: white;
+  font-weight: bold;
+  width: 150px;
+  font-size: 1em;
+  /* box-shadow: 左右の向きpx  上下の向きpx ぼかしpx 広がりpx 色 内側指定; */
+  /* box-shadow: 0 0 10px rgba(0 0 0 / 0.2); */
+  box-shadow: 5px 5px 4px;
+}
+.contact-submit:hover {
+  color: white;
+  background-color: #fa9500;
+}
+/* FOOTER SECTION */
+footer {
+  /* padding: 10px 50px 10px 90px;*/
+  /* float: left; */
+  /* position: absolute; */
+  background-color: #babd8d;
+  color: black;
+  height: auto;
+  width: 100%;
+}
+footer li {
+  padding-bottom: 10px;
+
+  text-decoration: underline;
+  color: white;
+  display: inline;
+  margin-left: 20px;
+  /* justify-content: space-between; */
+}
+.footer_elements {
+  padding-top: 20px;
+  /* display: flex;
+  flex-direction: column; */
+  text-align: center;
+}
+/*don't change the color to purple */
+footer a:visited {
+  color: black;
+}
+footer p {
+  font-size: 10px;
+  margin: auto 0;
+  text-align: center;
+}
+/* } */

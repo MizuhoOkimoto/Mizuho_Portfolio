@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Mizuho Okimoto Portfolio" />
+    <meta name="keywords" content="Mizuho, Okimoto, Mizuho Okimoto" />
+    <meta name="author" content="Mizuho Okimoto" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <!-- FOR USING BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- FOR custom css file / has to be ./ and folder name -->
+    <link rel="stylesheet" type="text/css" href="./src/css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/function.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/projects.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <title>Mizuho Okimoto / Portfolio</title>
+  </head>
+
+  <body>
+    <div class="container-fluid" id="top_jump">
+      <!-- Photo by Domenico Loia on Unsplash -->
+      <div class="top-container">
+        <img src="./src/public/img/topimage.jpg" alt="main background image" />
+        <div class="my_name">
+          <h1>
+            Okimoto<br />
+            Mizuho
+          </h1>
+        </div>
+        <div class="menu_box">
+          <ul class="menu">
+            <li><a href="#about_me_jump">ABOUT ME</a></li>
+            <li><a href="#skills_jump">SKILLS</a></li>
+            <li><a href="#projects_jump">PROJECTS</a></li>
+            <li><a href="https://dev.to/okimotomizuho" target="blank">BLOG</a></li>
+            <li><a href="#contact_jump">CONTACT ME</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- end top-container -->
+
+      <!-- for page top button -->
+      <p id="page-top"><a href="#">Page Top</a></p>
+
+      <div class="container-fluid">
+      <div class="about_me container-fluid" id="about_me_jump">
+        <h2>ABOUT ME</h2>
+        <div class="about_me-contents">
+          <div class="my_pic"><img src="./src/public/img/my_pic.jpg" alt="my picture" /></div>
+          <div class="explain">
+            <p>Hi! I am Mizuho! Thank you for visiting my page.</p>
+            <p>
+              I am a junior computer programmer, studying at Seneca College in Toronto.<br />
+              I am in my 5th semester and currently looking for a Coop job from January 2022!<br />
+              <br />
+              Before I came to Canada, I was a human resource consultant in Japan where my role
+              included collecting and analyzing data.<br />
+              So far, I have acquired knowledge of Object Oriented Programming and databases as well
+              as web development.<br />
+              In web development, I find JavaScript is very interesting, and I'm determined to gain
+              deeper knowledge and experience with it. Currently in my 5th semester, I take .NET,
+              Open-source, and Mobile App Development(Android) courses.<br />
+              Through my past experience as a store manager, a server, and a student, I've learned
+              how to prioritize my time and have become a fast-learner. Combined with my friendly
+              attitude and communication skills, I believe I would be beneficial to future
+              employers.<br />
+              <br />
+              In my spare time, I enjoy playing golf, seeing my friends, and meeting new people to
+              broaden my knowledge. My Ikigai(motto) is to enjoy every day to the fullest!<br />
+            </p>
+          </div>
+        </div>
+        <!-- end about_me-contents -->
+        <div class="buttons">
+          <button class="downloadResume"><a href="./src/public/img/Resume_Mizuho Okimoto_Seneca.pdf" 
+            download="Resume_MizuhoOkimoto.pdf" target="blank">DOWNLOAD MY RESUME</a></button>
+          <button><a href="#contact_jump">CONTACT ME</a></button>
+        </div>
+      </div>
+      <!-- end about_me -->
+      </div>
+      <!-- end container -->
+
+      <div class="container-fluid">
+      <div class="skills" id="skills_jump">
+        <h2>SKILLS</h2>
+        <hr />
+        <div class="programming">
+          <div class="programming_img mr-3"></div>
+          <div class="programming_skills col-6">
+            <h4>Programming:</h4>
+            <p>C, C++, Java, SQL, HTML, CSS, JavaScript</p>
+          </div>
+        </div>
+        <hr />
+        <div class="database">
+          <div class="database_img mr-3"></div>
+          <div class="database_skills col-6">
+            <h4>Database:</h4>
+            <p>Microsoft SQL Server, MySQL, Oracle</p>
+          </div>
+        </div>
+        <hr />
+        <div class="tool">
+          <div class="tool_img mr-3"></div>
+          <!-- <div class="tool_img2 mr-2"></div> -->
+          <div class="tool_skills flex-nowrap col-6">
+            <h4>Design and IDE tools:</h4>
+            <p>
+              MS Office, Eclipse, IntelliJ IDEA, Microsoft Visual Studio, Microsoft Visual Studio
+              Code, Heroku
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="web">
+          <div class="web_img mr-3"></div>
+          <!-- <div class="tool_img2 mr-2"></div> -->
+          <div class="web_skills flex-nowrap col-6">
+            <h4>Web Development:</h4>
+            <p>
+              JavaScript, CSS3, HTML5, XML, Node JS, Express JS, Handlebars JS, GIT, React, Angular
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="env">
+          <div class="env_img mr-3"></div>
+          <!-- <div class="tool_img2 mr-2"></div> -->
+          <div class="env_skills flex-nowrap col-6">
+            <h4>Environments:</h4>
+            <p>Windows, Linux/Unix, Mac</p>
+          </div>
+        </div>
+      </div>
+      <!-- end skills -->
+      </div>
+
+      <div class="projects" id="projects_jump">
+        <h2>PROJECTS</h2>
+        <div class="project_overallDesc">Below are some of my projects.</br>
+          I'm currently working on open source projects, Android mobile development, and .NET projects,</br> 
+          so I'll keep you updated!</div>
+        <ul class="slider">
+          <li>
+            <div class="each_work">
+              <a href="https://airbnb-clone165.herokuapp.com" target="blank">
+                <img src="./src/public/img/Nodejs_project.JPG" alt="my_project"
+              /></a>
+              <div class="desc">
+                <h5>Accommodation Booking site</h5>
+                <p>
+                  This website uses HTML 5, CSS3, Vanilla JavaScript, Node JS, Express.js and the
+                  Handlebars template engine. I created both administrator pages and user pages and
+                  stored information on MongoDB.
+                </p>
+                <div class="links">
+                  Links:
+                  <a
+                    href="https://github.com/MizuhoOkimoto/Accomodation-booking-site"
+                    target="blank"
+                    type="button"
+                    class="btn btn-primary"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://airbnb-clone165.herokuapp.com"
+                    target="blank"
+                    type="button"
+                    class="btn btn-info"
+                  >
+                    Website
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- React - Restaurant API -->
+          <li>
+            <div class="each_work">
+              <a href="https://react-restaurant-api.vercel.app/Restaurants" target="blank">
+                <img src="./src/public/img/React_project.JPG" alt="react_project" />
+              </a>
+              <div class="desc">
+                <h5>React - Restaurant API</h5>
+                <p>
+                  I created a React application. This website connects with MongoDB database and
+                  uses Leaflet to get map. <br>
+                </p>
+                <div class="links">
+                  Links:
+                  <a
+                    href="https://github.com/MizuhoOkimoto/React-Restaurant-API"
+                    target="blank"
+                    type="button"
+                    class="btn btn-primary"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://react-restaurant-api.vercel.app/Restaurants"
+                    target="blank"
+                    type="button"
+                    class="btn btn-info"
+                  >
+                    Website
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Angular-Music Discography -->
+          <li>
+            <div class="each_work">
+              <a href="https://discover-new-music.vercel.app/" target="blank">
+                <img src="./src/public/img/Angular_project.JPG" alt="angular_project" />
+              </a>
+              <div class="desc">
+                <h5>Angular - Music Discography</h5>
+                <p>
+                  This API gets data from MongoDB and has the functions of artist list, track list, song playback, and favorite registration.
+                  This application requires membership registration, so please register new user information or use the registered information below.<br />
+                  User Name:visitor / Password:1111
+                </p>
+                <div class="links">
+                  Links:
+                  <a
+                    href="https://github.com/MizuhoOkimoto/Discover-new-music"
+                    target="blank"
+                    type="button"
+                    class="btn btn-primary"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://discover-new-music.vercel.app/"
+                    target="blank"
+                    type="button"
+                    class="btn btn-info"
+                  >
+                    Website
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Open Source -->
+          <li>
+          <div class="each_work">
+            <a href="https://github.com/MizuhoOkimoto/pajama-ssg" target="blank">
+          <img src="./src/public/img/opensource.JPG" alt="opensource_project" />
+        </a>
+        <div class="desc">
+          <h5>Open Source Projects and Blog</h5>
+          <p>I'm working on Open Source projects, and I created an SSG. <br />
+            Moreover, I write blogs every week to update what I'm learning!</p>
+            <div class="links">
+            Links:
+            <a
+              href="https://github.com/MizuhoOkimoto"
+              target="blank"
+              type="button"
+              class="btn btn-primary githubBTN"
+              >GitHub</a
+            >
+            <a
+              href="https://dev.to/okimotomizuho"
+              target="blank"
+              type="button"
+              class="btn btn-info"
+              >Blog</a
+            >
+          </div>
+        </div>
+        </div>
+      </li>
+          <!--/slider-->
+        </ul>
+      </div>
+      <!-- end projects -->
+
+      <div class="contact" id="contact_jump">
+        <h2>CONTACT ME</h2>
+        <div class="contact_form">
+          <form action="https://formsubmit.co/e9b9e90fc88976b5b1d3bb4f009d5188" method="POST">
+            <div class="form-group">
+              <label for="contact_name"><span>*</span> Name </label>
+              <input
+                type="text"
+                class="form-control"
+                name="contact_name"
+                id="contact_name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="company_name"> Company name </label>
+              <input type="text" class="form-control" name="company_name" id="contact_name" />
+            </div>
+            <div class="form-group">
+              <label for="contact_email"><span>*</span> Email address</label>
+              <input
+                type="text"
+                class="form-control"
+                name="contact_email"
+                id="contact_email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message"><span>*</span>Message:</label>
+              <textarea class="form-control" rows="5" id="message"></textarea>
+            </div>
+            <p><span>* </span> Required fields must be filled</p>
+            <input class="contact-submit" type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
+      <!-- end contact -->
+
+      <footer>
+        <ul class="footer_elements">
+          <li><a href="#top_jump">TOP</a></li>
+          <li><a href="#about_me_jump">ABOUT ME</a></li>
+          <li><a href="#projects_jump">PROJECTS</a></li>
+          <li><a href="#contact_jump">CONTACT ME</a></li>
+        </ul>
+        <ul class="snsButtons">
+          <li class="snsButtons_twitter">
+            <i class="fa fa-twitter"></i><span class="snsButtons_label"></span>
+          </li>
+          <li class="snsButtons_facebook">
+            <i class="fa fa-facebook-square"></i><span class="snsButtons_label"></span>
+          </li>
+          <li class="snsButtons_instagram">
+            <i class="fa fa-instagram"></i><span class="snsButtons_label"></span>
+          </li>
+        </ul>
+        <p>2021 Mizuho Okimoto</p>
+      </footer>
+    </div>
+    <!-- end container -->
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./src/js/my-jquery.js"></script>
+
+    <!-- bootstrap -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
