@@ -144,8 +144,9 @@ h2 {
 .my_pic img {
   position: relative;
   height: 350px;
-  border-radius: 50%;
-  border: 10px solid #eb632475;
+  //border-radius: 50%;
+  //border: 10px solid #eb632475;
+  box-shadow: 20px 20px 1.5px 0px #eb632475;
 }
 /*
 .my_pic img:after {
