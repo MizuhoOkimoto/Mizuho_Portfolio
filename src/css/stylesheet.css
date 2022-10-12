@@ -127,7 +127,6 @@ h2 {
 } */
 .about_me-contents {
   display: flex;
-  overflow: hidden;
   justify-content: center;
   /* background-color: turquoise; */
   margin: 30px 30px;
@@ -137,15 +136,17 @@ h2 {
   /* width: 25%; */
   /* background-size is important */
   background-size: cover;
-  margin-left: 100px;
+
   margin-top: 30px;
   display: inline-block;
+  
 }
 .my_pic img {
   position: relative;
   height: 350px;
   border-radius: 50%;
   border: 10px solid #eb632475;
+  
 }
 /*
 .my_pic img:after {
@@ -166,10 +167,10 @@ h2 {
   /* display: inline-block; */
   /* float: left; */
   font-size: 20px;
-  margin-left: 50px;
-  margin-top: 60px;
+  /* margin-left: 50px; */
   line-height: 30px;
-  /* width: 70%; */
+  overflow: hidden;
+  margin-top: 10px;
 }
 
 /* @media screen and (min-width: 750px) { */
