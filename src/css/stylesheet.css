@@ -1,5 +1,10 @@
 /*color pallet: https://coolors.co/7c6a0a-babd8d-ffdac6-fa9500-eb6424 */
 /*----------------- START CONTAINER AND OTHER COMMON PART ------------------*/
+
+:root{
+  margin: 0;
+  padding: 0;
+}
 html,
 body,
 ul,
@@ -43,7 +48,6 @@ a {
   font-family: "Roboto Slab", serif;
   /* text-align: center; */
   width: 100vw;
-  margin-top: 50px;
   height: auto;
   opacity: 0.8;
   position: relative;
@@ -51,6 +55,14 @@ a {
 .top-container img {
   width: 100vw;
 }
+
+.my_name {
+  width: 100%;
+  max-width: 300px; /* adjust as needed */
+  margin: 0 auto;
+  text-align: center;
+}
+
 .my_name h1 {
   color: #eb6424;
   font-size: 5.5em;
@@ -61,6 +73,9 @@ a {
   position: absolute;
   left: 5vw;
   top: 5vw;
+
+  margin: 0;
+  line-height: 1.2;
 }
 .menu_box {
   /* background-color: rgba(196, 193, 169, 0.801); */
@@ -98,7 +113,7 @@ ul li:hover {
 
 /* ABOUT ME SECTION */
 .about_me {
-  margin: 20px 50px 50px 20px;
+  margin: 50px 50px 50px 20px;
   height: auto;
   /* display: block; */
   /* background-color: tomato; */
@@ -110,7 +125,7 @@ h2 {
   font-weight: 700;
   margin-bottom: 10px;
   margin-left: 20%;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   /* color: rgb(255, 115, 0); */
   color: #eb6424;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
@@ -131,75 +146,73 @@ h2 {
   /* background-color: turquoise; */
   margin: 30px 30px;
   float: left;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .my_pic {
   /* width: 25%; */
   /* background-size is important */
   background-size: cover;
-
   margin-top: 30px;
   display: inline-block;
-  
+  flex: 0 0 auto; /* This sets the flex-grow, flex-shrink, and flex-basis properties to 0, effectively fixing the width of the element */
+  width: 100%; /* This sets the width of the element to 100% */
+  max-width: 300px; /* This sets a maximum width to ensure the image does not become too large on larger screens */
+  margin-right: 15px; /* This adds some space between the image and the description */
+  margin-left: 5px;
+  text-align: center; /* Add this property to center the image */
 }
+
 .my_pic img {
   position: relative;
   height: 350px;
-  border-radius: 50%;
-  border: 10px solid #eb632475;
-  
-}
-/*
-.my_pic img:after {
-  position: absolute;
-  display: block;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 400px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transform: rotate(3deg); //回転させる
-  background: #fff;
-  z-index: -5;
-}
-*/
-.explain {
-  /* display: inline-block; */
-  /* float: left; */
-  font-size: 20px;
-  /* margin-left: 50px; */
-  line-height: 30px;
-  overflow: hidden;
-  margin-top: 10px;
+  box-shadow: 15px 15px 1px  #eb632475;
 }
 
-/* @media screen and (min-width: 750px) { */
-/* 750px以上の画面のみ横並びを適用 */
-/*
-  .my_pic,
-  .explain {
-    margin-bottom: 0;
-    text-align: left;
+.explain {
+  font-size: 25px;
+  line-height: 30px;
+  /* overflow: hidden; */
+  margin-top: 40px;
+  flex: 1 1 auto; /* This sets the flex-grow and flex-shrink properties to 1, allowing the element to grow and shrink with the available space */
+  width: 100%; /* This sets the width of the element to 100% */
+  max-width: calc(100% - 520px); /* This sets a maximum width to ensure the description does not become too narrow on smaller screens */
+  margin-left: 30px;
+}
+
+/* ---------------  Media queries for smaller screens starts --------------- */
+@media screen and (max-width: 768px) {
+  .about_me {
+    padding-top: 80px;
+    }
+
+  .about_me-contents {
+    flex-direction: column;
   }
 
   .my_pic {
-    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .explain {
-    display: inline-block;
-    width: 300px;
-    margin-left: 20px;
-    vertical-align: top;
+    max-width: 100%; /* 幅を100%にして縦長にならないようにする */
+    font-size: 20px;
   }
 }
-*/
+
+/* ---------------  Media queries for smaller screens ends --------------- */
+
 .buttons {
   /* float: left; */
   margin: 50px 40px 50px 50px;
-  text-align: center;
+  /* text-align: center; */
   clear: left;
-
+  display: flex;
+  justify-content: center;
   /* background-color: violet; */
 }
 .buttons a {
@@ -232,20 +245,15 @@ h2 {
 
 /* SKILLS SECTION */
 .skills {
-  margin: 60px 20px 80px 20px;
+  margin: 60px 0px 80px 0px;
   height: auto;
   justify-content: center;
   clear: left;
+  background-color: #f8ede87a;
+  padding: 50px 0px 50px 0px;
+  
 }
-/* .skills h1 {
-  font-size: 4em;
-  font-weight: 700;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-top: 50px;
-  color: rgb(255, 115, 0);
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
-} */
+
 .programming {
   display: flex; /* flex box */
   justify-content: center; /* 水平方向 */
@@ -394,36 +402,32 @@ textarea {
 }
 /* FOOTER SECTION */
 footer {
-  /* padding: 10px 50px 10px 90px;*/
-  /* float: left; */
-  /* position: absolute; */
-  background-color: #babd8d;
-  color: black;
+  background-color:#fa9500;
   height: auto;
   width: 100%;
 }
 footer li {
   padding-bottom: 10px;
-
-  text-decoration: underline;
-  color: white;
+  /* color: white; */
   display: inline;
   margin-left: 20px;
-  /* justify-content: space-between; */
 }
 .footer_elements {
   padding-top: 20px;
-  /* display: flex;
-  flex-direction: column; */
   text-align: center;
 }
 /*don't change the color to purple */
+footer a:link,
 footer a:visited {
-  color: black;
+  color: white;
 }
+
 footer p {
-  font-size: 10px;
+  font-size: 15px;
   margin: auto 0;
   text-align: center;
 }
-/* } */
+
+
+
+
