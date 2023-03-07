@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio - Mizuho Okimoto 🚀
 
 This is my personal portfolio, where I showcase my projects and skills as a software developer.
 
@@ -25,11 +25,11 @@ This project was built using the following technologies:
 - JavaScript
 - Node.js
 - Express.js
-- React
+- React.js
 - Angular
 
 
 ## Author
 
 My name is Mizuho Okimoto and I'm a developer based in Toronto. 
-You can find more of my work on [my portfolio](https://www.okimotomizuho.com).
+You can find more of my work on [my portfolio](https://www.okimotomizuho.com) &#x1f440;
