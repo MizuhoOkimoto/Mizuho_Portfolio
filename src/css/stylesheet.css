@@ -32,6 +32,7 @@ a {
   text-decoration: none;
 }
 /*-------------- END CONTAINER AND OTHER COMMON PART ---------------------*/
+
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -87,12 +88,82 @@ a {
   text-align: center;
 }
 
-
-
 ul li:hover {
   /* color: rgb(41, 39, 39); */
   color: #7c6a0a;
 }
+
+
+/* THIS IS FOR RESPONSIVE - TOP CONTAINER */
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    /* display: none; */
+  }
+
+  /* .hamburger {
+    display: block;
+  } */
+  .hamburger:before {
+    content: "\2630";
+    font-size: 30px;
+  }
+  
+  /* Change color of hamburger menu on hover */
+  .hamburger:hover {
+    color: #f4d03f;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .menu_box {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+  }
+  .menu_box li {
+    margin-bottom: 5px;
+  }
+  .menu_box.visible {
+    display: block;
+  }
+}
+
 
 /* ABOUT ME SECTION */
 .about_me {
@@ -151,15 +222,17 @@ h2 {
 /* ---------------  Media queries for smaller screens starts --------------- */
 @media screen and (max-width: 768px) {
   .about_me {
-    padding-top: 80px;
+    margin-top: 350px;
     }
 
   .about_me-contents {
     flex-direction: column;
+    margin-top: 8px;
   }
 
   .my_pic {
     float: left;
+    margin-top: 0px;
     margin-right: 20px;
     display: flex;
     justify-content: center;

@@ -29,27 +29,37 @@
 
   <body>
     <div class="container-fluid" id="top_jump">
-      <div class="row">
-      <!-- Photo by Domenico Loia on Unsplash -->
-      <div class="top-container">
-        <img src="./src/public/img/topimage.jpg" alt="main background image" />
-        <div class="my_name">
-          <h1>
-            Okimoto<br />
-            Mizuho
-          </h1>
-        </div>
-        <div class="menu_box">
-          <ul class="menu">
-            <li><a href="#about_me_jump">ABOUT ME</a></li>
-            <li><a href="#skills_jump">SKILLS</a></li>
-            <li><a href="#projects_jump">PROJECTS</a></li>
-            <li><a href="https://dev.to/okimotomizuho" target="blank">BLOG</a></li>
-            <li><a href="#contact_jump">CONTACT ME</a></li>
-          </ul>
-        </div>
-      </div><!-- end top-container -->
-    </div><!-- end row -->
+      <!-- Top container -->
+<div class="top-container">
+  <!-- Show the image only on larger screens -->
+  <img src="./src/public/img/topimage.jpg" alt="main background image" class="top-image desktop-only" />
+  
+  <!-- Name and menu -->
+  <div class="name-menu-container">
+    <div class="my_name">
+      <h1>
+        Okimoto<br />
+        Mizuho
+      </h1>
+    </div>
+    <!-- Hamburger menu for smaller screens -->
+    <button class="menu-icon mobile-only hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <!-- Menu items -->
+    <div class="menu_box mobile-menu hidden">
+      <ul class="menu">
+        <li><a href="#about_me_jump" onclick="toggleMenu()">ABOUT ME</a></li>
+        <li><a href="#skills_jump" onclick="toggleMenu()">SKILLS</a></li>
+        <li><a href="#projects_jump" onclick="toggleMenu()">PROJECTS</a></li>
+        <li><a href="https://dev.to/okimotomizuho" target="blank" onclick="toggleMenu()">BLOG</a></li>
+        <li><a href="#contact_jump" onclick="toggleMenu()">CONTACT ME</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- end top-container -->
       
 
       <!-- for page top button -->

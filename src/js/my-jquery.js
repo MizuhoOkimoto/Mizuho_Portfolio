@@ -50,3 +50,17 @@ $(".slider").slick({
   variableWidth: true, //Display images with different widths at the same height
   dots: true, //display dot navigation
 });
+
+//------ MENU ------//
+// function toggleMenu() {
+//   const menuBox = document.querySelector('.menu_box.mobile-menu');
+//   const menuIcon = document.querySelector('.menu-icon.hamburger');
+
+//   menuBox.classList.toggle('show');
+//   menuIcon.classList.toggle('active');
+// }
+
+function toggleMenu() {
+  var menu = document.querySelector('.mobile-menu');
+  menu.classList.toggle('visible');
+}
