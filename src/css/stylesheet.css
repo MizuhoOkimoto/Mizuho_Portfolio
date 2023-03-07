@@ -221,6 +221,9 @@ h2 {
 
 /* ---------------  Media queries for smaller screens starts --------------- */
 @media screen and (max-width: 768px) {
+  .my_name {
+    margin-top: 20px;
+  }
   .about_me {
     margin-top: 350px;
     }
