@@ -52,6 +52,7 @@
 #page-top.RightMove {
   animation: RightAnime 0.5s forwards;
 }
+
 @keyframes RightAnime {
   from {
     opacity: 1;

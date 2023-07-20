@@ -41,63 +41,67 @@
 
   <body>
     <div class="container-fluid" id="top_jump">
-      <div class="row">
-      <!-- Photo by Domenico Loia on Unsplash -->
-      <div class="top-container">
-        <img src="./src/public/img/topimage.jpg" alt="main background image" />
-        <div class="my_name">
-          <h1>
-            Okimoto<br />
-            Mizuho
-          </h1>
-        </div>
-        <div class="menu_box">
-          <ul class="menu">
-            <li><a href="#about_me_jump">ABOUT ME</a></li>
-            <li><a href="#skills_jump">SKILLS</a></li>
-            <li><a href="#projects_jump">PROJECTS</a></li>
-            <li><a href="https://dev.to/okimotomizuho" target="blank">BLOG</a></li>
-            <li><a href="#contact_jump">CONTACT ME</a></li>
-          </ul>
-        </div>
-      </div><!-- end top-container -->
-    </div><!-- end row -->
+      <!-- Top container -->
+<div class="top-container">
+  <!-- Show the image only on larger screens -->
+  <img src="./src/public/img/topimage.jpg" alt="main background image" class="top-image desktop-only" />
+  
+  <!-- Name and menu -->
+  <div class="name-menu-container">
+    <div class="my_name">
+      <h1>
+        Okimoto<br />
+        Mizuho
+      </h1>
+    </div>
+    <!-- Hamburger menu for smaller screens -->
+    <button class="menu-icon mobile-only hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <!-- Menu items -->
+    <div class="menu_box mobile-menu hidden">
+      <ul class="menu">
+        <li><a href="#about_me_jump" onclick="toggleMenu()">ABOUT ME</a></li>
+        <li><a href="#skills_jump" onclick="toggleMenu()">SKILLS</a></li>
+        <li><a href="#projects_jump" onclick="toggleMenu()">PROJECTS</a></li>
+        <li><a href="https://dev.to/okimotomizuho" target="blank" onclick="toggleMenu()">BLOG</a></li>
+        <li><a href="#contact_jump" onclick="toggleMenu()">CONTACT ME</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- end top-container -->
       
 
       <!-- for page top button -->
       <p id="page-top"><a href="#">Page Top</a></p>
 
       <div class="container-fluid">
-        <div class="row">
+        <!-- <div class="row"> -->
       <div class="about_me" id="about_me_jump">
         <h2>ABOUT ME</h2>
         <div class="about_me-contents">
-          <div class="my_pic col-3"><img src="./src/public/img/my_pic.jpg" alt="my picture" /></div>
-          <div class="explain col-9">
-            <p>Hi! I am Mizuho! Thank you for visiting my page.</p>
-            <p>
-              I am a junior computer programmer, studying at Seneca College in Toronto.<br />
-              I am in my last 6th semester and currently looking for a job from January 2023!<br />
-              <br />
-              I have acquired knowledge of Object Oriented Programming and databases as well
-              as web development.<br /> I also experience with Open-source development and DevOps.
-              Through my past experience as a store manager, a server, and a student, I've learned
-              how to prioritize my time and have become a fast-learner. Combined with my friendly
-              attitude and skills, I believe I would be beneficial to future employers.<br />
-              <br />
-              In my spare time, I enjoy playing golf, seeing my friends, and meeting new people to
-              broaden my knowledge. My Ikigai(motto) is to enjoy every day to the fullest!<br />
-            </p>
+          <div class="my_pic col-md-3 order-md-1"><img src="./src/public/img/profile.JPG" alt="my picture" /></div>
+          <div class="explain col-md-9 order-md-2">
+            <p>Hello, I'm <span style="color:  #eb6424; font-weight: 800; font-style: bold;">Mizuho</span>!</P><br>
+              <p>
+              I recently graduated from Seneca College with a degree in Computer Programming and Analysis, 
+              and I'm excited to launch my career in the tech industry. 
+              As a passionate problem-solver and team player, 
+              I'm eager to contribute my skills and knowledge to an organization where I can continue to learn and grow. 
+              My goal is to become a skilled software developer and make a meaningful impact in the field.</p> <br>
+            <p>If you are interested in working with me, please feel free to contact me!</p>
           </div>
         </div>
       </div>
         <!-- end about_me-contents -->
         <div class="buttons">
-          <button class="downloadResume"><a href="./src/public/img/Resume_Mizuho Okimoto_Seneca.pdf" 
+          <button class="downloadResume"><a href="./src/public/img/Resume_Mizuho Okimoto_2023_Portfolio.pdf" 
             download="Resume_MizuhoOkimoto.pdf" target="blank">DOWNLOAD MY RESUME</a></button>
           <button><a href="#contact_jump">CONTACT ME</a></button>
         </div>
-      </div>
+      <!-- </div> -->
       <!-- end about_me -->
       </div>
       <!-- end container -->
@@ -106,62 +110,68 @@
       <div class="skills" id="skills_jump">
         <h2>SKILLS</h2>
         <hr />
+
         <div class="programming">
           <div class="programming_img mr-3"></div>
           <div class="programming_skills col-6">
             <h4>Programming:</h4>
-            <p>C, C++, Java, SQL, HTML, CSS, JavaScript</p>
+            <p>C, C++, Java, JavaScript, ASP.NET, Android Mobile application Development(Java)</p>
           </div>
         </div>
         <hr />
-        <div class="database">
-          <div class="database_img mr-3"></div>
-          <div class="database_skills col-6">
-            <h4>Database:</h4>
-            <p>Microsoft SQL Server, MySQL, Oracle</p>
-          </div>
-        </div>
-        <hr />
-        <div class="tool">
-          <div class="tool_img mr-3"></div>
-          <!-- <div class="tool_img2 mr-2"></div> -->
-          <div class="tool_skills flex-nowrap col-6">
-            <h4>Design and IDE tools:</h4>
-            <p>
-              MS Office, Eclipse, IntelliJ IDEA, Microsoft Visual Studio, Microsoft Visual Studio
-              Code, Heroku
-            </p>
-          </div>
-        </div>
-        <hr />
+
         <div class="web">
           <div class="web_img mr-3"></div>
           <!-- <div class="tool_img2 mr-2"></div> -->
           <div class="web_skills flex-nowrap col-6">
             <h4>Web Development:</h4>
             <p>
-              JavaScript, CSS3, HTML5, XML, Node JS, Express JS, Handlebars JS, GIT, React, Angular
+              CSS, HTML, XML, JavaScript (Node, Express, Handlebars, React, Angular), Git
             </p>
           </div>
         </div>
         <hr />
+
+        <div class="database">
+          <div class="database_img mr-3"></div>
+          <div class="database_skills col-6">
+            <h4>Database:</h4>
+            <p>SQL, PL/SQL, MySQL, Oracle</p>
+          </div>
+        </div>
+        <hr />
+        
         <div class="env">
           <div class="env_img mr-3"></div>
           <!-- <div class="tool_img2 mr-2"></div> -->
           <div class="env_skills flex-nowrap col-6">
-            <h4>Environments:</h4>
-            <p>Windows, Linux/Unix, Mac</p>
+            <h4>Cloud Computing:</h4>
+            <p>Amazon AWS, Microsoft Azure</p>
           </div>
         </div>
+        <hr />
+
+        <div class="tool">
+          <div class="tool_img mr-3"></div>
+          <!-- <div class="tool_img2 mr-2"></div> -->
+          <div class="tool_skills flex-nowrap col-6">
+            <h4>DevOps:</h4>
+            <p>
+              Azure DevOps, Jenkins, Docker, Terraform, Ansible, Prometheus, Grafana
+            </p>
+          </div>
+        </div>
+        
       </div>
       <!-- end skills -->
       </div>
 
       <div class="projects" id="projects_jump">
         <h2>PROJECTS</h2>
-        <div class="project_overallDesc">Below are some of my projects.</br>
-          I'm currently working on open source projects, Android mobile development, and .NET projects,</br> 
-          so I'll keep you updated!</div>
+        <div class="project_overallDesc">Below are some of my projects.
+        </br>
+          I'm currently working on open source projects, Android mobile development, and .NET projects.</br> 
+          I'll keep you updated!</div>
         <ul class="slider">
           <li>
             <div class="each_work">
@@ -171,7 +181,7 @@
               <div class="desc">
                 <h5>Accommodation Booking site</h5>
                 <p>
-                  This website uses HTML 5, CSS3, Vanilla JavaScript, Node JS, Express.js and the
+                  Uses HTML 5, CSS3, Vanilla JavaScript, Node, Express, and the
                   Handlebars template engine. I created both administrator pages and user pages and
                   stored information on MongoDB.
                 </p>
@@ -205,8 +215,8 @@
               <div class="desc">
                 <h5>React - Restaurant API</h5>
                 <p>
-                  I created a React application. This website connects with MongoDB database and
-                  uses Leaflet to get map. <br>
+                  A React application to search restaurants in NY. Fetches data from MongoDB database and
+                  uses Leaflet to dispay a map. <br>
                 </p>
                 <div class="links">
                   Links:
@@ -238,8 +248,8 @@
               <div class="desc">
                 <h5>Angular - Music Discography</h5>
                 <p>
-                  This API gets data from MongoDB and has the functions of artist list, track list, song playback, and favorite registration.
-                  This application requires membership registration, so please register new user information or use the registered information below.<br />
+                  API gets data from MongoDB and has the functions of artist and track list, playback, and favorite registration.
+                  Requires registration. Please register new user information or use the registered information below.<br />
                   User Name:visitor / Password:1111
                 </p>
                 <div class="links">
@@ -355,7 +365,7 @@
             <i class="fa fa-instagram"></i><span class="snsButtons_label"></span>
           </li>
         </ul>
-        <p>2023 Mizuho Okimoto</p>
+        <p>2023 - Mizuho Okimoto</p>
       </footer>
     
     </div>
